@@ -1,4 +1,4 @@
-def calculate(operation, a, b):
+def calculate(a, b, operation):
     if operation == 'add':
         return a + b
     elif operation == 'subtract':
@@ -16,9 +16,9 @@ def calculate(operation, a, b):
 
 # Example usage
 if __name__ == "__main__":
-    print(calculate('add', 5, 3))        # Output: 8
-    print(calculate('subtract', 5, 3))   # Output: 2
-    print(calculate('multiply', 5, 3))   # Output: 15
-    print(calculate('divide', 5, 3))     # Output: 1.666...
-    print(calculate('power', 2, 3))      # Output: 8
-    print(calculate('divide', 5, 0))     # Error
+    print(calculate(5, 3, 'add'))
+    print(calculate(5, 3, 'subtract'))
+    print(calculate(5, 3, 'multiply'))
+    print(calculate(5, 3, 'power'))
+    print(calculate(5, 3, 'divide'))
+    print(calculate(5, 0, 'divide'))
